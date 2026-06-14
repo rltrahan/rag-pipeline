@@ -1,7 +1,5 @@
 """Basic sanity tests for the rag_pipeline package."""
 
-import pytest
-
 
 def test_package_imports():
     """Verify that the main package can be imported."""
