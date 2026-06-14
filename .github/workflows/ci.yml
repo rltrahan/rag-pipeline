@@ -29,12 +29,8 @@ jobs:
           ruff check .
           ruff format --check .
 
-      - name: Run tests (allow no tests yet)
+      - name: Run tests
+        env:
+          PYTHONPATH: src
         run: |
-          pytest --tb=no || exit_code=$?
-          if [ $exit_code -eq 5 ]; then
-            echo "No tests collected yet — this is expected in early development."
-            exit 0
-          elif [ $exit_code -ne 0 ]; then
-            exit $exit_code
-          fi
+          pytest --tb=short
