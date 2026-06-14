@@ -4,6 +4,7 @@
 def test_package_imports():
     """Verify that the main package can be imported."""
     import rag_pipeline
+
     assert rag_pipeline is not None
 
 
