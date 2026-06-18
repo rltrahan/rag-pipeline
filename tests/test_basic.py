@@ -1,5 +1,7 @@
 """Basic sanity tests for the rag_pipeline package."""
 
+from rag_pipeline import ingestion
+
 
 def test_package_imports():
     """Verify that the main package can be imported."""
